@@ -1,0 +1,328 @@
+/* ==========================================================================
+   style.css — Palette and content updates per request
+   - Only color-related changes + small .hero__roles text style
+   ========================================================================== */
+
+/* -------------------------
+   Variables & Base (colors updated)
+   ------------------------- */
+:root{
+  --bg: #dbe1e6;             /* main background (warm neutral) */
+  --surface: #34495E;        /* cards / containers (primary) */
+  --text: #1F2933;           /* main text for readability */
+  --muted: #6B7280;          /* muted text / subtitles (unchanged) */
+  --accent: #34495E;         /* primary accent (header, buttons, headings) */
+  --accent-600: #34495E;     /* same for consistency */
+  --radius: 12px;
+  --container: 1100px;
+  --max-width: 1100px;
+  --shadow: 0 6px 18px rgba(31,41,51,0.06);   /* shadow using text color */
+  --focus: 3px rgba(52,73,94,0.18);           /* focus ring uses accent */
+  --font: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  --transition: 180ms ease;
+}
+
+/* Box sizing and reset */
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html, body { height: 100%; }
+
+body {
+  margin: 0;
+  font-family: var(--font);
+  background: var(--bg);   /* updated background */
+  color: var(--text);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+}
+
+/* Accessibility: visible skip link for keyboard */
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: -999px;
+  background: var(--accent);
+  color: white;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+}
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+  z-index: 999;
+}
+
+/* -------------------------
+   Layout helpers (unchanged)
+   ------------------------- */
+.container {
+  width: min(94%, var(--container));
+  margin: 0 auto;
+  padding: 2.25rem 0;
+}
+
+/* Header — now uses primary accent */
+.site-header {
+  position: sticky;
+  top: 0;
+  background: var(--accent); /* header color updated */
+  z-index: 40;
+  backdrop-filter: blur(6px);
+  margin-bottom: 1rem;
+  color: white; /* ensure text contrast */
+}
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+/* Branding */
+.brand {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+/* Make the mark contrast on the accent header */
+.brand__mark {
+  width: 44px;
+  height: 44px;
+  display: inline-grid;
+  place-items: center;
+  background: white;            /* white mark for contrast */
+  color: var(--accent);         /* accent text inside mark */
+  border-radius: 9px;
+  font-weight: 700;
+}
+.brand__name {
+  font-weight: 600;
+  color: white;                 /* ensure visibility on header */
+}
+
+/* Nav */
+.nav__list {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav__link {
+  color: rgba(255,255,255,0.95); /* links visible on accent header */
+  text-decoration: none;
+  padding: 0.45rem 0.6rem;
+  border-radius: 8px;
+  transition: color var(--transition), background var(--transition);
+  font-weight: 500;
+}
+.nav__link:hover,
+.nav__link:focus {
+  color: white;
+  background: rgba(255,255,255,0.06); /* subtle highlight on hover */
+  outline: none;
+  box-shadow: none;
+}
+
+/* -------------------------
+   Hero (layout unchanged) 
+   ------------------------- */
+.hero__inner {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 2.5rem;
+  align-items: center;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.hero__title {
+  font-size: clamp(1.8rem, 3.6vw, 2.6rem);
+  margin: 0 0 0.25rem 0;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+.hero__subtitle {
+  margin: 0;
+  color: var(--muted);
+  font-weight: 600;
+}
+.hero__tagline {
+  margin-top: 0.85rem;
+  color: var(--muted);
+  max-width: 60ch;
+}
+
+/* Small role line (non-structural, color only) */
+.hero__roles {
+  margin: 0.4rem 0 0.4rem 0;
+  color: var(--text);
+  font-weight: 600;
+}
+
+/* Buttons — primary uses accent */
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.6rem 0.9rem;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: transform var(--transition), box-shadow var(--transition);
+  border: 1px solid transparent;
+}
+.btn:not(:last-child) { margin-right: 0.6rem; }
+
+.btn--primary {
+  background: linear-gradient(180deg,var(--accent) 0%,var(--accent-600) 100%);
+  color: white;
+  box-shadow: var(--shadow);
+}
+.btn--primary:hover,
+.btn--primary:focus {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(31,41,51,0.08);
+}
+
+.btn--outline {
+  background: transparent;
+  color: var(--accent);
+  border-color: rgba(52,73,94,0.14);
+}
+.btn--outline:hover,
+.btn--outline:focus {
+  transform: translateY(-3px);
+  background: rgba(52,73,94,0.06);
+}
+
+/* Visual card — follows primary accent (cards/containers use accent) */
+.visual__card {
+  background: var(--accent);  /* visual card now uses primary color */
+  border-radius: var(--radius);
+  padding: 1.2rem;
+  box-shadow: var(--shadow);
+  display: flex;
+  gap: 0.9rem;
+  align-items: center;
+  color: white;               /* text on accent should be readable */
+}
+.visual__accent {
+  width: 54px;
+  height: 54px;
+  border-radius: 10px;
+  background: white; /* contrast square */
+  flex-shrink: 0;
+}
+.visual__text strong { display:block; }
+.visual__text span { color: rgba(255,255,255,0.92); font-size: 0.95rem; }
+
+/* -------------------------
+   Sections
+   ------------------------- */
+.section {
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
+}
+/* Section headings use the primary accent color */
+.section__title {
+  font-size: 1.1rem;
+  margin: 0 0 1rem 0;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+/* About */
+.about__lead { color: var(--muted); max-width: 70ch; }
+
+/* Skills - pill badges (accent tint) */
+.skills__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.1rem;
+}
+.skills__heading { margin: 0 0 0.5rem 0; font-weight: 600; }
+.skills__list { list-style: none; margin: 0; padding: 0; display: flex; gap: 0.5rem; flex-wrap: wrap; }
+.skill {
+  background: rgba(52,73,94,0.09); /* tint of accent */
+  color: var(--accent);
+  padding: 0.45rem 0.7rem;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+/* Projects (cards now accent containers) */
+.projects__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+.card {
+  background: var(--surface); /* primary color per request */
+  border-radius: 12px;
+  padding: 1.15rem;
+  box-shadow: var(--shadow);
+  transition: transform var(--transition), box-shadow var(--transition);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;               /* ensure readability on accent background */
+}
+.card:hover,
+.card:focus-within {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 36px rgba(31,41,51,0.08);
+}
+.card__title { margin: 0 0 0.5rem 0; font-size: 1.05rem; color: white; }
+.card__text { color: rgba(255,255,255,0.92); margin: 0 0 0.9rem 0; }
+.card__meta { font-size: 0.875rem; color: rgba(255,255,255,0.78); }
+
+/* Card actions */
+.card__actions { display: flex; gap: 0.5rem; margin-top: 0.8rem; }
+.card__link { color: rgba(255,255,255,0.95); text-decoration: none; font-weight: 600; }
+.card__link:hover { text-decoration: underline; }
+
+/* Achievements & Contact lists */
+.achievements__list,
+.contact__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: var(--muted);
+}
+.contact__item a { color: var(--accent); text-decoration: none; }
+.contact__item a:hover { text-decoration: underline; }
+
+/* Footer (subtle border uses text color tint) */
+.site-footer { padding-top: 1.25rem; padding-bottom: 2.25rem; color: var(--muted); border-top: 1px solid rgba(31,41,51,0.03); }
+
+/* -------------------------
+   Responsive breakpoints (unchanged)
+   ------------------------- */
+@media (max-width: 980px){
+  .hero__inner { grid-template-columns: 1fr 300px; }
+  .projects__grid { grid-template-columns: 1fr; }
+  .skills__grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 720px){
+  .header__inner { gap: 0.5rem; }
+  .nav__list { display: none; } /* simple mobile nav hiding for minimalism */
+  .hero__inner { grid-template-columns: 1fr; gap: 1.2rem; }
+  .visual__card { width: 100%; }
+  .container { padding-left: 1rem; padding-right: 1rem; }
+  .skills__grid { grid-template-columns: 1fr; }
+  .brand__name { display: none; } /* compact header on small screens */
+}
+
+/* Focus ring for keyboard users (uses updated focus color) */
+a:focus, button:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px var(--focus);
+  border-radius: 8px;
+}
