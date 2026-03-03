@@ -6,7 +6,7 @@ A modern, responsive personal portfolio website built with pure HTML, CSS, and v
 
 ## ✨ Live Preview
 
-> 🚀 _Deploy link will go here once hosted (GitHub Pages / Vercel / Netlify)_
+> 🚀 https://fathimamehrinvs.github.io/
 
 ---
 
