@@ -6,8 +6,8 @@ A modern, responsive personal portfolio website built with pure HTML, CSS, and v
 
 ## ✨ Live Preview
 
-> 🚀 https://fathimamehrinvs.github.io/
-
+> Github pages🚀: https://fathimamehrinvs.github.io/
+> Vercel 🚀: https://my-portfolio-sigma-one-68.vercel.app/
 ---
 
 ## 📁 Project Structure
