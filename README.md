@@ -1,167 +1,89 @@
-# 🌐 Fathima Mehrin V S — Personal Portfolio
+# Fathima Mehrin V S — Personal Portfolio
 
-A modern, responsive personal portfolio website built with pure HTML, CSS, and vanilla JavaScript. Designed to be visually impressive, lightweight, and recruiter-ready.
+A minimal, monochrome, editorial-style portfolio built with plain HTML, CSS and vanilla JavaScript. No frameworks, no build tools and no external dependencies.
+
+## Live Preview
+
+- [GitHub Pages](https://fathimamehrinvs.github.io/)
+- [Vercel](https://my-portfolio-sigma-one-68.vercel.app/)
 
 ---
 
-## ✨ Live Preview
-
-
-- 🚀 [Vercel](https://my-portfolio-sigma-one-68.vercel.app/)  
-- 🚀 [GitHub Pages](https://fathimamehrinvs.github.io/)
----
-
-## 📁 Project Structure
+## Project Structure
 
 ```
-portfolio/
-├── index.html      # Main HTML — all sections & content
-├── style.css       # All styles — variables, layout, animations
-├── script.js       # Vanilla JS — interactions & scroll effects
-└── README.md       # You're reading it!
+FathimaMehrinVS.github.io/
+├── index.html                      # All sections and content
+├── style.css                       # Design tokens, layout, responsive rules
+├── script.js                       # Menu, scroll progress, active nav, reveal
+├── Fathima_Mehrin_VS_Resume.pdf    # Résumé linked from the hero button
+└── README.md
 ```
 
 ---
 
-## 🎨 Features
+## Design
 
-- **Hero Section** — Animated gradient headline, floating orbs, and an interactive 3D tilt card
-- **Skills Section** — Color-coded badges by category (Languages, Web, Tools, Soft Skills)
-- **Projects Section** — Cards with type badges, tech stack chips, and placeholder "View Work" buttons ready to activate
-- **Achievements Section** — Icon-badged certification cards, visually grouped by issuer
-- **Contact Section** — Direct links to Email, LinkedIn, and GitHub
-- **Sticky Navigation** — Glassmorphism navbar with active link highlighting on scroll
-- **Scroll Progress Bar** — Thin gradient bar at the top of the page
-- **Scroll Reveal Animations** — Staggered fade-up animations using IntersectionObserver
-- **Responsive Design** — Mobile, tablet, and desktop layouts with a hamburger menu
-- **Dynamic Footer Year** — Auto-updated with JavaScript
+Minimal Monochrome Editorial, with a Swiss-inspired layout.
+
+| Token       | Value     |
+|-------------|-----------|
+| Background  | `#FFFFFF` |
+| Text        | `#111111` |
+| Secondary   | `#777777` |
+| Borders     | `#D9D9D9` |
+
+- Oversized hero typography with a subtle dotted-grid background
+- Small uppercase monospace labels for section names and project categories
+- Square corners, no gradients, restrained hover effects and scroll-reveal animations
+- Fully responsive (desktop, tablet, mobile) with a collapsible mobile menu
+- Accessibility: skip link, semantic landmarks, visible focus states, `aria-current` on the active nav link, keyboard-closable menu, and `prefers-reduced-motion` support
+
+## Sections
+
+1. **About**
+2. **Experience** — Frontend Developer Intern, DataPMI Inc.
+3. **Projects** — NAVIKA, RENEWQUE, FixTheGap, ProjectHub Backend, LIFELINE, FairAI Studio (each with a GitHub repository button)
+4. **Skills**
+5. **Education**
+6. **Achievements & Certifications**
+7. **Contact** — email, LinkedIn, GitHub, LeetCode, Kaggle
 
 ---
 
-## 🛠️ Tech Stack
-
-| Layer      | Technology                          |
-|------------|--------------------------------------|
-| Markup     | HTML5 (semantic)                     |
-| Styling    | CSS3 (custom properties, animations) |
-| Scripts    | Vanilla JavaScript (ES6+)            |
-| Icons      | Font Awesome 6.4 (CDN)               |
-| Fonts      | Segoe UI / System UI (no extra load) |
-
-No frameworks. No build tools. No dependencies to install. Just open `index.html`.
-
----
-
-## 🚀 Getting Started
-
-### Run Locally
+## Run Locally
 
 ```bash
-# 1. Clone the repository
-git clone https://github.com/FathimaMehrinVS/portfolio.git
-
-# 2. Navigate into the folder
-cd portfolio
-
-# 3. Open in browser
-# Simply double-click index.html  OR use a live server:
+git clone https://github.com/FathimaMehrinVS/FathimaMehrinVS.github.io.git
+cd FathimaMehrinVS.github.io
+# Open index.html in a browser, or serve it locally:
 npx live-server
 ```
 
-> **Tip:** Use the [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) VS Code extension for the best development experience.
+## Deployment
+
+The site is deployed with GitHub Pages from the `main` branch (root). Push to `main` and the live site updates within a minute or two.
 
 ---
 
-## 🔗 Activating Project Links
+## Updating Content
 
-Each project card has a "View Work" button that is currently commented out. When your project is ready to share:
-
-1. Open `index.html`
-2. Find the `.project-links` div inside the relevant project card
-3. Uncomment the `<a>` tag and replace `#` with your real URL:
-
-```html
-<!-- Before (commented out) -->
-<!-- <a href="#" class="btn btn-outline btn-sm" target="_blank">
-       <i class="fab fa-github"></i> View Work
-     </a> -->
-
-<!-- After (active) -->
-<a href="https://github.com/FathimaMehrinVS/FixTheGap" class="btn btn-outline btn-sm" target="_blank">
-  <i class="fab fa-github"></i> View Work
-</a>
-```
+| What to change            | Where                                              |
+|---------------------------|----------------------------------------------------|
+| Hero text, stats          | `index.html` → `#hero`                             |
+| Add or edit a project     | `index.html` → `#projects` → `<ol class="cases">`  |
+| Skills                    | `index.html` → `#skills`                           |
+| Education, achievements   | `index.html` → `#education`, `#achievements`       |
+| Contact links             | `index.html` → `#contact`                          |
+| Colours, fonts, spacing   | `style.css` → `:root` variables                    |
+| Résumé                    | Replace `Fathima_Mehrin_VS_Resume.pdf` (keep the filename) |
 
 ---
 
-## 🌍 Deployment
-
-### GitHub Pages (Free & Easy)
-
-```bash
-# 1. Push your code to a GitHub repository named:
-#    FathimaMehrinVS.github.io  (for root portfolio)
-#    OR any repo name (for project page)
-
-# 2. Go to repo → Settings → Pages
-# 3. Set Source: Deploy from branch → main → / (root)
-# 4. Your site will be live at:
-#    https://FathimaMehrinVS.github.io
-```
-
-### Netlify (Drag & Drop)
-
-1. Go to [netlify.com](https://netlify.com) → Log in
-2. Drag and drop your `portfolio/` folder onto the dashboard
-3. Your site is live instantly with a free URL
-
-### Vercel
-
-```bash
-npm i -g vercel
-vercel
-# Follow the prompts — done in under a minute
-```
-
----
-
-## 🎨 Customization Guide
-
-| What to change         | Where to find it                        |
-|------------------------|-----------------------------------------|
-| Name / tagline         | `index.html` → `#hero` section          |
-| Email / social links   | `index.html` → `#contact` & `<footer>` |
-| Color palette          | `style.css` → `:root` CSS variables     |
-| Add a new project      | `index.html` → `.projects-grid`         |
-| Add a certification    | `index.html` → `.achievements-grid`     |
-| Profile photo          | Replace `.avatar` div with an `<img>`   |
-
----
-
-## 📌 Featured Projects
-
-| Project | Type | Tech |
-|---------|------|------|
-| **MindBliss** | Hobby | HTML/CSS, JavaScript, LocalStorage |
-| **CampusCare** | Academic | HTML/CSS, JavaScript, Python |
-| **FixTheGap** | ML Project | Python, scikit-learn, FastAPI, Tavily API, JavaScript |
-
----
-
-## 📬 Contact
+## Contact
 
 | Platform | Link |
 |----------|------|
-| 📧 Email | [mehrinfiza57@gmail.com](mailto:mehrinfiza57@gmail.com) |
-| 💼 LinkedIn | [fathima-mehrin-v-s](https://www.linkedin.com/in/fathima-mehrin-v-s) |
-| 🐙 GitHub | [FathimaMehrinVS](https://github.com/FathimaMehrinVS) |
-
----
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
----
-
-<p align="center">Designed & built with 💜 by <strong>Fathima Mehrin V S</strong></p>
+| Email    | [fathimamehrinvs57@gmail.com](mailto:fathimamehrinvs57@gmail.com) |
+| LinkedIn | [fathima-mehrin-v-s](https://www.linkedin.com/in/fathima-mehrin-v-s) |
+| GitHub   | [FathimaMehrinVS](https://github.com/FathimaMehrinVS) |

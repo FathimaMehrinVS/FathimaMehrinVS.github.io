@@ -1,319 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-  <title>Fathima Mehrin V S — Portfolio</title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
-  <link rel="stylesheet" href="style.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fathima Mehrin V S — Computer Science Undergraduate · ML &amp; Backend</title>
+  <meta name="description" content="Portfolio of Fathima Mehrin V S — B.Tech CSE (Honours in Machine Learning) student building ML-powered and AI-assisted applications with FastAPI, Flutter and React.">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div id="progress" aria-hidden="true"></div>
 
-  <div id="progress"></div>
+  <!-- NAVIGATION -->
+  <header id="navbar">
+    <nav class="nav" aria-label="Primary">
+      <a class="logo" href="#hero">Fathima Mehrin V S</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <!-- ── NAVIGATION ── -->
-  <nav id="navbar">
-    <div class="logo">FATHIMA MEHRIN V S</div>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#hero">Home</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#achievements">Achievements</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <button class="hamburger" id="hamburger" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
-  </nav>
+  <main id="main">
 
-  <!-- ── HERO ── -->
-  <section id="hero">
-    <div class="hero-bg"></div>
-    <div class="orb orb1"></div>
-    <div class="orb orb2"></div>
-    <div class="orb orb3"></div>
-
-    <div class="hero-wrapper">
-      <div class="hero-content">
-        <div class="hero-tag">
-          <i class="fas fa-circle pulse-dot"></i> Available for internships &amp; collaborations
+    <!-- HERO -->
+    <section id="hero" class="dotted">
+      <div class="wrap">
+        <p class="label hero-status"><span class="status-dot" aria-hidden="true"></span>Open to opportunities</p>
+        <h1 class="hero-name">
+          <span>Fathima</span>
+          <span>Mehrin</span>
+          <span>V S</span>
+        </h1>
+        <div class="hero-meta">
+          <p class="hero-role">Computer Science undergraduate<br>Honours in Machine Learning · Minors in Mathematics</p>
+          <p class="hero-desc">Building ML-powered and AI-assisted applications with FastAPI, Flutter and React — grounded in Python, data structures &amp; algorithms, and backend development.</p>
+          <div class="hero-btns">
+            <a href="#projects" class="btn btn-solid">View projects</a>
+            <a href="Fathima_Mehrin_VS_Resume.pdf" class="btn btn-line" target="_blank" rel="noopener">Resume (PDF)</a>
+          </div>
         </div>
-        <h1 class="hero-name">Fathima Mehrin V S</h1>
-        <p class="hero-role">
-          Building the future with <span>AI · ML · Generative AI</span>
-        </p>
-        <p class="hero-desc">
-          CSE student turning ideas into intelligent systems — from mindfulness apps to
-          ML-powered salary simulators. Passionate about ethical AI, elegant interfaces,
-          and solving real-world problems with data-driven thinking.
-        </p>
-        <div class="hero-btns">
-          <a href="#projects" class="btn btn-primary"><i class="fas fa-rocket"></i> View My Work</a>
-          <a href="#contact" class="btn btn-outline"><i class="fas fa-paper-plane"></i> Get in Touch</a>
+        <dl class="stats">
+          <div><dt class="label">CGPA</dt><dd>8.76</dd></div>
+          <div><dt class="label">GATE 2026 · CS</dt><dd>AIR 18337</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="wrap grid">
+        <div class="col-label reveal"><p class="label">01 — About</p></div>
+        <div class="col-body reveal">
+          <p class="lead">Undergraduate in Computer Science and Engineering with strong foundations in <strong>Python, data structures and algorithms, and backend development</strong>.</p>
+          <p>Experienced in building ML-powered and AI-assisted applications with FastAPI, Flutter and React. Pursuing an Honours in Machine Learning and a Minors in Mathematics at Muthoot Institute of Technology and Science, Kerala. Qualified GATE 2026 (Computer Science).</p>
         </div>
       </div>
+    </section>
 
-      <!-- 3D Tilt Card -->
-      <div class="hero-card">
-        <div class="tilt-card" id="tiltCard">
-          <div class="tilt-card-inner">
-            <div class="avatar">FM</div>
-            <div class="card-info">
-              <h3>Fathima Mehrin V S</h3>
-              <p>AI/ML · GenAI · Web Dev</p>
+    <!-- EXPERIENCE -->
+    <section id="experience">
+      <div class="wrap grid">
+        <div class="col-label reveal"><p class="label">02 — Experience</p></div>
+        <div class="col-body">
+          <article class="entry reveal">
+            <div class="entry-head">
+              <h2 class="entry-title">Frontend Developer Intern</h2>
+              <p class="entry-date">12 June 2026 – 12 July 2026</p>
             </div>
-          </div>
-          <div class="card-tags">
-            <span class="chip">Python</span>
-            <span class="chip">JavaScript</span>
-            <span class="chip pink">GenAI</span>
-            <span class="chip blue">Machine Learning</span>
-            <span class="chip">DSA</span>
-            <span class="chip pink">FastAPI</span>
-            <span class="chip blue">LLMs</span>
-          </div>
+            <p class="entry-org">DataPMI Inc.</p>
+            <ul class="plain">
+              <li>Worked on frontend development and frontend–backend integration with FastAPI APIs, including CRUD data flow.</li>
+              <li>Built the ProjectHub backend; explored AI chatbot request/response flow and Server-Sent Events (SSE).</li>
+            </ul>
+          </article>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ── SKILLS ── -->
-  <section id="skills">
-    <div class="container">
-      <div class="reveal">
-        <div class="section-label"><i class="fas fa-code"></i> What I know</div>
-        <h2 class="section-title">Skills &amp; Technologies</h2>
-        <p class="section-sub">A blend of programming languages, web technologies, AI/ML tools, and soft skills I bring to every project.</p>
-      </div>
-      <div class="skills-grid reveal">
-        <span class="skill-badge cat-lang"><i class="fab fa-python"></i> Python</span>
-        <span class="skill-badge cat-lang"><i class="fas fa-c"></i> C Language</span>
-        <span class="skill-badge cat-lang"><i class="fab fa-js"></i> JavaScript</span>
-        <span class="skill-badge cat-web"><i class="fab fa-html5"></i> HTML5</span>
-        <span class="skill-badge cat-web"><i class="fab fa-css3-alt"></i> CSS3</span>
-        <span class="skill-badge cat-web"><i class="fas fa-layer-group"></i> Front-End Dev</span>
-        <span class="skill-badge cat-web"><i class="fas fa-globe"></i> Web Development</span>
-        <span class="skill-badge cat-lang"><i class="fas fa-sitemap"></i> DSA (Learning)</span>
-        <span class="skill-badge cat-lang"><i class="fas fa-cubes"></i> OOP</span>
-        <span class="skill-badge cat-tool"><i class="fab fa-github"></i> GitHub</span>
-        <span class="skill-badge cat-tool"><i class="fas fa-server"></i> FastAPI</span>
-        <span class="skill-badge cat-tool"><i class="fas fa-brain"></i> Machine Learning</span>
-        <span class="skill-badge cat-tool"><i class="fas fa-microchip"></i> Generative AI</span>
-        <span class="skill-badge cat-soft"><i class="fas fa-comments"></i> Communication</span>
-        <span class="skill-badge cat-soft"><i class="fas fa-people-group"></i> Team Management</span>
-      </div>
-    </div>
-  </section>
+    <!-- PROJECTS -->
+    <section id="projects" class="dotted">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="label">03 — Selected work</p>
+          <h2 class="section-title">Projects</h2>
+        </div>
 
-  <!-- ── PROJECTS ── -->
-  <section id="projects">
-    <div class="container">
-      <div class="reveal">
-        <div class="section-label"><i class="fas fa-folder-open"></i> What I've built</div>
-        <h2 class="section-title">Featured Projects</h2>
-        <p class="section-sub">A mix of personal passion projects, academic builds, and ML-powered tools.</p>
-      </div>
-      <div class="projects-grid">
-
-        <!-- MindBliss -->
-        <div class="project-card reveal">
-          <div class="project-header">
-            <div class="project-icon">🧘</div>
-            <div class="project-header-text">
-              <span class="project-type type-hobby">Hobby Project</span>
-              <h3 class="project-title">MindBliss</h3>
+        <ol class="cases">
+          <li class="case reveal">
+            <div class="case-index" aria-hidden="true">01</div>
+            <div class="case-main">
+              <p class="label">Collaborative · In progress</p>
+              <h3>NAVIKA</h3>
+              <p class="case-sub">RAG-Enabled Conversational AI Kiosk for Accessible 3D Indoor Campus Navigation</p>
+              <ul class="plain">
+                <li>Collaborative project; built Python DXF-processing pipelines for floor-wise geometry and semantic rooms, and an interactive multi-floor 3D visualisation (React, Three.js, TypeScript).</li>
+                <li>Contributed to multi-floor navigation (shortest-path routing, staircase/lift links) and 3D camera fixes; working on DXF cleaning.</li>
+              </ul>
+              <ul class="tags" aria-label="Technologies"><li>Python</li><li>React</li><li>Three.js</li><li>TypeScript</li><li>RAG</li></ul>
+              <a class="btn btn-line btn-sm" href="https://github.com/Athi183/NAVIKA" target="_blank" rel="noopener noreferrer">GitHub repository <span aria-hidden="true">↗</span><span class="sr-only">(NAVIKA, opens in a new tab)</span></a>
             </div>
-          </div>
-          <p class="project-desc">
-            A peaceful journaling app designed for mindfulness and mental well-being.
-            Features a calming interface that guides users through daily reflections,
-            mood tracking, and gratitude journaling with soothing visuals.
-          </p>
-          <div class="tech-stack">
-            <span class="tech-tag">HTML/CSS</span>
-            <span class="tech-tag">JavaScript</span>
-            <span class="tech-tag">LocalStorage</span>
-            <span class="tech-tag">CSS Animations</span>
-          </div>
-          <div class="project-links">
-            <!-- TODO: Replace # with your actual GitHub / Live link when ready -->
-            <!-- <a href="#" class="btn btn-outline btn-sm" target="_blank"><i class="fab fa-github"></i> View Work</a> -->
-          </div>
-        </div>
+          </li>
 
-        <!-- CampusCare -->
-        <div class="project-card reveal">
-          <div class="project-header">
-            <div class="project-icon">🎓</div>
-            <div class="project-header-text">
-              <span class="project-type type-academic">Academic Project</span>
-              <h3 class="project-title">CampusCare</h3>
+          <li class="case reveal">
+            <div class="case-index" aria-hidden="true">02</div>
+            <div class="case-main">
+              <p class="label">Collaborative · Flutter + FastAPI</p>
+              <h3>RENEWQUE</h3>
+              <p class="case-sub">AI-Powered Sustainable Fashion Assistant</p>
+              <ul class="plain">
+                <li>Contributed Sustainability AI integration and data/embedding components to a collaborative Flutter and FastAPI app.</li>
+              </ul>
+              <ul class="tags" aria-label="Technologies"><li>Flutter</li><li>FastAPI</li><li>Embeddings</li></ul>
+              <a class="btn btn-line btn-sm" href="https://github.com/Athi183/RENEWQUE" target="_blank" rel="noopener noreferrer">GitHub repository <span aria-hidden="true">↗</span><span class="sr-only">(RENEWQUE, opens in a new tab)</span></a>
             </div>
-          </div>
-          <p class="project-desc">
-            A campus lost &amp; found management system that streamlines item reporting
-            and retrieval. Students can post lost or found items, browse listings, and
-            connect with finders — reducing the chaos of campus lost property.
-          </p>
-          <div class="tech-stack">
-            <span class="tech-tag">HTML/CSS</span>
-            <span class="tech-tag">JavaScript</span>
-            <span class="tech-tag">Python</span>
-            <span class="tech-tag">Database</span>
-            <span class="tech-tag">Web Dev</span>
-          </div>
-          <div class="project-links">
-            <!-- TODO: Replace # with your actual GitHub / Live link when ready -->
-            <!-- <a href="#" class="btn btn-outline btn-sm" target="_blank"><i class="fab fa-github"></i> View Work</a> -->
-          </div>
-        </div>
+          </li>
 
-        <!-- FixTheGap -->
-        <div class="project-card reveal card-highlight">
-          <div class="project-header">
-            <div class="project-icon icon-blue">⚖️</div>
-            <div class="project-header-text">
-              <span class="project-type type-ml">ML Project</span>
-              <h3 class="project-title">FixTheGap</h3>
+          <li class="case reveal">
+            <div class="case-index" aria-hidden="true">03</div>
+            <div class="case-main">
+              <p class="label">Machine learning</p>
+              <h3>FixTheGap</h3>
+              <p class="case-sub">ML-Powered Salary Transparency and Pay-Gap Simulator</p>
+              <ul class="plain">
+                <li>Developed the FastAPI backend, API design and deployment; trained the Scikit-learn salary-prediction model.</li>
+              </ul>
+              <ul class="tags" aria-label="Technologies"><li>FastAPI</li><li>Scikit-learn</li><li>Python</li></ul>
+              <a class="btn btn-line btn-sm" href="https://github.com/FathimaMehrinVS/FixTheGap" target="_blank" rel="noopener noreferrer">GitHub repository <span aria-hidden="true">↗</span><span class="sr-only">(FixTheGap, opens in a new tab)</span></a>
             </div>
-          </div>
-          <p class="project-desc">
-            An ML-powered salary transparency simulator using Linear Regression to
-            estimate fair compensation based on role, experience, and location.
-            Integrated with real-time salary insights via the Tavily API — tackling
-            pay equity one prediction at a time.
-          </p>
-          <div class="tech-stack">
-            <span class="tech-tag">Python</span>
-            <span class="tech-tag">Linear Regression</span>
-            <span class="tech-tag">FastAPI</span>
-            <span class="tech-tag">Tavily API</span>
-            <span class="tech-tag">JavaScript</span>
-            <span class="tech-tag">scikit-learn</span>
-          </div>
-          <div class="project-links">
-            <!-- TODO: Replace # with your actual GitHub / Live link when ready -->
-            <!-- <a href="#" class="btn btn-outline btn-sm" target="_blank"><i class="fab fa-github"></i> View Work</a> -->
-          </div>
-        </div>
+          </li>
 
-      </div>
-    </div>
-  </section>
+          <li class="case reveal">
+            <div class="case-index" aria-hidden="true">04</div>
+            <div class="case-main">
+              <p class="label">Internship project · Backend</p>
+              <h3>ProjectHub Backend</h3>
+              <p class="case-sub">Project-Management Application Backend</p>
+              <ul class="plain">
+                <li>Implemented SQLAlchemy models, CRUD endpoints, bcrypt password hashing and JWT-based role access in FastAPI.</li>
+              </ul>
+              <ul class="tags" aria-label="Technologies"><li>FastAPI</li><li>SQLAlchemy</li><li>JWT</li><li>bcrypt</li></ul>
+              <a class="btn btn-line btn-sm" href="https://github.com/FathimaMehrinVS/projecthub_backend" target="_blank" rel="noopener noreferrer">GitHub repository <span aria-hidden="true">↗</span><span class="sr-only">(ProjectHub Backend, opens in a new tab)</span></a>
+            </div>
+          </li>
 
-  <!-- ── ACHIEVEMENTS ── -->
-  <section id="achievements">
-    <div class="container">
-      <div class="reveal">
-        <div class="section-label"><i class="fas fa-trophy"></i> Milestones</div>
-        <h2 class="section-title">Achievements &amp; Certifications</h2>
-        <p class="section-sub">Continuous learning through recognized programs and certifications.</p>
+          <li class="case reveal">
+            <div class="case-index" aria-hidden="true">05</div>
+            <div class="case-main">
+              <p class="label">Humanitarian · Finance</p>
+              <h3>LIFELINE</h3>
+              <p class="case-sub">AI-Powered Humanitarian Financial Access and Payment Coordination Network</p>
+              <ul class="plain">
+                <li>Developed deterministic financial-assessment logic (fees, accessibility, route eligibility) and a finance evaluation API.</li>
+              </ul>
+              <ul class="tags" aria-label="Technologies"><li>Python</li><li>API design</li></ul>
+              <a class="btn btn-line btn-sm" href="https://github.com/FathimaMehrinVS/LIFELINE_PayPal_AI_Hackathon" target="_blank" rel="noopener noreferrer">GitHub repository <span aria-hidden="true">↗</span><span class="sr-only">(LIFELINE, opens in a new tab)</span></a>
+            </div>
+          </li>
+
+          <li class="case reveal">
+            <div class="case-index" aria-hidden="true">06</div>
+            <div class="case-main">
+              <p class="label">Responsible AI</p>
+              <h3>FairAI Studio</h3>
+              <p class="case-sub">Responsible AI Recruitment Platform with Bias Auditing</p>
+              <ul class="plain">
+                <li>Implemented bias-detection and audit logic, fairness-metric export and SHAP impact summaries for audit reporting.</li>
+              </ul>
+              <ul class="tags" aria-label="Technologies"><li>Python</li><li>SHAP</li><li>Fairness metrics</li></ul>
+              <a class="btn btn-line btn-sm" href="https://github.com/FathimaMehrinVS/fair-ai-studio" target="_blank" rel="noopener noreferrer">GitHub repository <span aria-hidden="true">↗</span><span class="sr-only">(FairAI Studio, opens in a new tab)</span></a>
+            </div>
+          </li>
+        </ol>
       </div>
-      <div class="achievements-grid">
-        <div class="achievement-card reveal">
-          <div class="achievement-icon ach-g"><i class="fab fa-google"></i></div>
-          <div>
-            <h4>Google Cloud Computing Foundations</h4>
-            <p>Cloud architecture, core services &amp; computing fundamentals</p>
-          </div>
-        </div>
-        <div class="achievement-card reveal">
-          <div class="achievement-icon ach-l"><i class="fas fa-language"></i></div>
-          <div>
-            <h4>LinguaSkills Business English B2</h4>
-            <p>Professional business communication &amp; English proficiency at B2 level</p>
-          </div>
-        </div>
-        <div class="achievement-card reveal">
-          <div class="achievement-icon ach-p"><i class="fas fa-graduation-cap"></i></div>
-          <div>
-            <h4>NPTEL Python Programming</h4>
-            <p>Python fundamentals, data structures &amp; problem-solving</p>
-          </div>
-        </div>
-        <div class="achievement-card reveal">
-          <div class="achievement-icon ach-p"><i class="fas fa-graduation-cap"></i></div>
-          <div>
-            <h4>NPTEL C Programming</h4>
-            <p>Core C concepts, memory management &amp; systems programming</p>
-          </div>
-        </div>
-        <div class="achievement-card reveal">
-          <div class="achievement-icon ach-b"><i class="fas fa-plug"></i></div>
-          <div>
-            <h4>Backend Frameworks &amp; API Development</h4>
-            <p>RESTful API design, backend frameworks &amp; FastAPI in production</p>
-          </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <div class="wrap grid">
+        <div class="col-label reveal"><p class="label">04 — Skills</p></div>
+        <div class="col-body reveal">
+          <dl class="rows">
+            <div><dt class="label">Programming languages</dt><dd><ul class="tags"><li>Python</li><li>C</li><li>Java</li><li>JavaScript</li></ul></dd></div>
+            <div><dt class="label">Web, frameworks &amp; libraries</dt><dd><ul class="tags"><li>HTML</li><li>CSS</li><li>React</li><li>FastAPI</li><li>Flutter</li><li>Scikit-learn</li><li>NumPy</li><li>Pandas</li></ul></dd></div>
+            <div><dt class="label">Database &amp; tools</dt><dd><ul class="tags"><li>SQL</li><li>Git</li><li>GitHub</li></ul></dd></div>
+          </dl>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ── CONTACT ── -->
-  <section id="contact">
-    <div class="container">
-      <div class="contact-wrapper">
-        <div class="contact-text reveal">
-          <div class="section-label"><i class="fas fa-envelope"></i> Let's connect</div>
-          <h2>Let's Build Something Together</h2>
-          <p>I'm always open to internship opportunities, AI/ML collaborations, and exciting projects. Feel free to reach out!</p>
-          <div class="contact-links">
-            <a href="mailto:mehrinfiza57@gmail.com" class="contact-link">
-              <i class="fas fa-envelope"></i>
+    <!-- EDUCATION -->
+    <section id="education">
+      <div class="wrap grid">
+        <div class="col-label reveal"><p class="label">05 — Education</p></div>
+        <div class="col-body">
+          <ul class="timeline">
+            <li class="entry reveal">
+              <p class="entry-date">2023 – Present</p>
               <div>
-                <strong>Email Me</strong><br>
-                <span>mehrinfiza57@gmail.com</span>
+                <h2 class="entry-title">B.Tech in Computer Science and Engineering</h2>
+                <p class="entry-org">Muthoot Institute of Technology and Science (MITS), Kerala</p>
+                <p class="meta">CGPA 8.76 · Expected graduation 2027</p>
               </div>
-            </a>
-            <a href="https://www.linkedin.com/in/fathima-mehrin-v-s" target="_blank" class="contact-link">
-              <i class="fab fa-linkedin"></i>
+            </li>
+            <li class="entry reveal">
+              <p class="entry-date">2024 – Present</p>
               <div>
-                <strong>LinkedIn</strong><br>
-                <span>fathima-mehrin-v-s</span>
+                <h2 class="entry-title">B.Tech Honours in Machine Learning &amp; Minors in Mathematics</h2>
+                <p class="entry-org">Muthoot Institute of Technology and Science (MITS), Kerala</p>
               </div>
-            </a>
-            <a href="https://github.com/FathimaMehrinVS" target="_blank" class="contact-link">
-              <i class="fab fa-github"></i>
+            </li>
+            <li class="entry reveal">
+              <p class="entry-date">2023</p>
               <div>
-                <strong>GitHub</strong><br>
-                <span>FathimaMehrinVS</span>
+                <h2 class="entry-title">Class XII</h2>
+                <p class="entry-org">St. Joseph's Higher Secondary School, Kerala</p>
+                <p class="meta">98%</p>
               </div>
-            </a>
-          </div>
+            </li>
+            <li class="entry reveal">
+              <p class="entry-date">2021</p>
+              <div>
+                <h2 class="entry-title">Class X</h2>
+                <p class="entry-org">St. Joseph's Higher Secondary School, Kerala</p>
+                <p class="meta">100% · School Topper</p>
+              </div>
+            </li>
+          </ul>
         </div>
+      </div>
+    </section>
 
-        <div class="reveal contact-card-right">
-          <svg class="grid-deco" viewBox="0 0 360 360" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
-                <path d="M 30 0 L 0 0 0 30" fill="none" stroke="white" stroke-width="0.5"/>
-              </pattern>
-            </defs>
-            <rect width="360" height="360" fill="url(#grid)"/>
-          </svg>
-          <div class="open-card">
-            <div class="open-emoji">👋</div>
-            <h3>Open to Opportunities</h3>
-            <p>3rd-year CSE student exploring AI, ML &amp; GenAI — looking for internships, open-source contributions, and collaborative builds.</p>
-            <div class="open-chips">
-              <span class="chip">Internship</span>
-              <span class="chip pink">AI / ML</span>
-              <span class="chip blue">Open Source</span>
-            </div>
+    <!-- ACHIEVEMENTS & CERTIFICATIONS -->
+    <section id="achievements" class="dotted">
+      <div class="wrap grid">
+        <div class="col-label reveal"><p class="label">06 — Achievements &amp; certifications</p></div>
+        <div class="col-body">
+          <div class="reveal">
+            <h2 class="sub-title">Achievements &amp; leadership</h2>
+            <ul class="rule-list">
+              <li><span><strong>GATE 2026 (Computer Science)</strong> — Qualified · Score 400 · AIR 18337</span></li>
+              <li><span><strong>Winner, Lumira IEEE Idea Pitch Competition (2025)</strong> — Sarathi Plus disaster-management solution</span></li>
+              <li><span><strong>NSS Energy Cell Unit Coordinator (Unit 264)</strong></span><time>2025 – 2026</time></li>
+              <li><span><strong>NSS Volunteer</strong> — Muthoot Institute of Technology and Science</span><time>2024 – 2026</time></li>
+              <li><span><strong>NSS Volunteer</strong> — St. Joseph's Higher Secondary School</span><time>2021 – 2023</time></li>
+            </ul>
+          </div>
+          <div class="reveal">
+            <h2 class="sub-title">Certifications &amp; courses</h2>
+            <ul class="rule-list">
+              <li><span><strong>NPTEL — Deep Learning</strong> · IIT Ropar · Elite + Silver</span><time>Jul–Oct 2026</time></li>
+              <li><span><strong>NPTEL — The Joy of Computing Using Python</strong> · IIT Ropar · Elite + Silver</span><time>Jul–Oct 2025</time></li>
+              <li><span><strong>NPTEL — Problem Solving Through Programming in C</strong> · IIT Kharagpur · Elite</span><time>Jul–Oct 2024</time></li>
+              <li><span><strong>TalentNext — Java Full Stack</strong> · Wipro</span><time>Jul–Oct 2026</time></li>
+              <li><span><strong>FutureSkills Prime — AIML</strong> · nasscom IT-ITeS SSC</span><time>Jun 2026</time></li>
+              <li><span><strong>Backend Frameworks and API Deployment</strong> · L&amp;T EduTech</span><time>Jul–Nov 2025</time></li>
+              <li><span><strong>Google Cloud Computing Foundations Certificate</strong> · Google Cloud</span><time>Jun 2025</time></li>
+              <li><span><strong>Linguaskill Business (B2)</strong> · Cambridge English</span><time>Mar 2024</time></li>
+            </ul>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ── FOOTER ── -->
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="wrap">
+        <p class="label reveal">07 — Contact</p>
+        <h2 class="contact-title reveal">Let's build<br>something together.</h2>
+        <ul class="contact-list reveal">
+          <li><span class="label">Email</span><a href="mailto:fathimamehrinvs57@gmail.com">fathimamehrinvs57@gmail.com</a></li>
+          <li><span class="label">LinkedIn</span><a href="https://www.linkedin.com/in/fathima-mehrin-v-s" target="_blank" rel="noopener noreferrer">fathima-mehrin-v-s <span aria-hidden="true">↗</span><span class="sr-only">(opens in a new tab)</span></a></li>
+          <li><span class="label">GitHub</span><a href="https://github.com/FathimaMehrinVS" target="_blank" rel="noopener noreferrer">FathimaMehrinVS <span aria-hidden="true">↗</span><span class="sr-only">(opens in a new tab)</span></a></li>
+          <li><span class="label">LeetCode</span><a href="https://leetcode.com/u/fathimamehrinvs" target="_blank" rel="noopener noreferrer">fathimamehrinvs <span aria-hidden="true">↗</span><span class="sr-only">(opens in a new tab)</span></a></li>
+          <li><span class="label">Kaggle</span><a href="https://www.kaggle.com/fathimamehrinvs57" target="_blank" rel="noopener noreferrer">fathimamehrinvs57 <span aria-hidden="true">↗</span><span class="sr-only">(opens in a new tab)</span></a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
   <footer>
-    <div class="footer-links">
-      <a href="mailto:mehrinfiza57@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-      <a href="https://www.linkedin.com/in/fathima-mehrin-v-s" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-      <a href="https://github.com/FathimaMehrinVS" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+    <div class="wrap footer-inner">
+      <p>© <span id="year">2026</span> Fathima Mehrin V S</p>
+      <p><a href="#hero">Back to top ↑</a></p>
     </div>
-    <p>Designed &amp; built by <strong class="accent-text">Fathima Mehrin V S</strong> · <span id="year"></span></p>
   </footer>
 
   <script src="script.js"></script>
